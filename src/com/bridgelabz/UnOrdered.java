@@ -8,7 +8,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.LinkedList;
 import java.util.Scanner;
-
 public class UnOrdered<T> {
 
     String[] array;

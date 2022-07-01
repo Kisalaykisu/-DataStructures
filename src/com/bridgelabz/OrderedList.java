@@ -8,6 +8,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.LinkedList;
 import java.util.Scanner;
+
 public class UnOrdered<T> {
 
     String[] array;
@@ -24,7 +25,7 @@ public class UnOrdered<T> {
     }
 
     public void readFromFile() throws FileNotFoundException {
-        File file = new File("G:\\programming\\JAVA LFP batch\\DataStructures\\sampleText.txt");
+        File file = new File("C:\\Users\\Kisalay\\Downloads\\PracticeJavaProblem-main\\PracticeJavaProblem-main");
         Scanner sc = new Scanner(file);
 
         while (sc.hasNextLine()) {
@@ -53,7 +54,7 @@ public class UnOrdered<T> {
     public void saveToFile() {
         String contents = new String();
         for (T item : linkedList) {
-            contents += item+" ";
+            contents += " " + item;
         }
         try {
             Files.writeString(Path.of("C:\\Users\\Kisalay\\Downloads\\PracticeJavaProblem-main\\PracticeJavaProblem-main"), contents, StandardCharsets.UTF_8);
